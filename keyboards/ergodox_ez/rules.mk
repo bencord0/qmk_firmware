@@ -90,3 +90,5 @@ endif
 
 
 LAYOUTS = ergodox
+
+CFLAGS += -fno-stack-protector

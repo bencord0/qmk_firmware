@@ -102,6 +102,7 @@ endif
 #CFLAGS += -Wsign-compare
 CFLAGS += -Wa,-adhlns=$(@:%.o=%.lst)
 CFLAGS += $(CSTANDARD)
+CFLAGS += -fno-stack-protector
 
 #---------------- Compiler Options C++ ----------------
 #  -g*:          generate debugging information
