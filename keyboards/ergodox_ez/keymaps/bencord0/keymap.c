@@ -112,7 +112,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |        |  F1  |  F2  |  F3  |  F4  |  F5  |------|           |------|  F6  |  _   |  +   |  {   |  }   |  |     |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |        |  F7  |  F8  |  F9  |  F10 |  F11 |      |           |      |  F12 |      | Prev | Next | RESET|        |
+ * |        |  F7  |  F8  |  F9  |  F10 |  F11 |      |           |      |  F12 | PAUSE| Prev | Next | RESET|        |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   |      |      |      |      |      |                                       | Play | Next | Mute | VolDn| VolUp|
  *   `----------------------------------'                                       `----------------------------------'
@@ -120,7 +120,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        |      |      |       |      |      |
  *                                 ,------|------|------|       |------+------+------.
  *                                 |      |      |      |       |      |      |      |
- *                                 |      |      |------|       |------|      |      |
+ *                                 |      |      |------|       |------| PRINT| SCRLK|
  *                                 |      |      |      |       |      |      |      |
  *                                 `--------------------'       `--------------------'
  */
@@ -140,12 +140,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS,  KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TRNS,
                  KC_F6,   KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, UK_PIPE,
-       KC_TRNS,  KC_F12,  KC_NO,   KC_MPRV, KC_MNXT,   RESET,   KC_TRNS,
+       KC_TRNS,  KC_F12,  KC_PAUS, KC_MPRV, KC_MNXT,   RESET,   KC_TRNS,
                           KC_MPLY, KC_MNXT, KC_MUTE, KC_VOLD, KC_VOLU,
        // Thumb cluster
        KC_TRNS, KC_TRNS,
        KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS
+       KC_TRNS, KC_PSCR, KC_SLCK
 ),
 };
 
